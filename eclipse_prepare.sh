@@ -27,16 +27,20 @@ eclipse_epp_packages=https://download.eclipse.org/technology/epp/packages/$RELEA
 # SVN CUSTOM REPOS
 svn_repo=https://download.eclipse.org/technology/subversive/4.8/release/latest/
 connectors_repo=https://osspit.org/eclipse/subversive-connectors/
+sql_repo=https://de-jcup.github.io/update-site-eclipse-sql-editor/update-site
+bash_repo=https://de-jcup.github.io/update-site-eclipse-bash-editor/update-site
 
-repos=$eclipse_updates,$eclipse_releases,$eclipse_epp_packages,$svn_repo,$connectors_repo
+repos=$eclipse_updates,$eclipse_releases,$eclipse_epp_packages,$svn_repo,$connectors_repo,$sql_repo,$bash_repo
 
 # FEATURES
 jdt=org.eclipse.jdt.feature.group
 svn=org.eclipse.team.svn.feature.group
 connectors=org.polarion.eclipse.team.svn.connector,org.polarion.eclipse.team.svn.connector.svnkit1_10
 wildwebdevelopers=org.eclipse.wildwebdeveloper.feature.feature.group
+sqleditor=de.jcup.sqleditor.feature.group
+m2e=org.eclipse.m2e.feature.feature.group
 
-features=$jdt,$svn,$connectors,$wildwebdevelopers
+features=$jdt,$svn,$connectors,$wildwebdevelopers,$sqleditor,$m2e
 
 echo "+======================================================"
 echo "| PROVISIONING ECLIPSE IDE"
