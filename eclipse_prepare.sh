@@ -10,8 +10,8 @@
 
 # Change these settings for every Eclipse version
  
-VERSION="4.29"
-RELEASE="2023-09"
+VERSION="4.30"
+RELEASE="2023-12"
 
 # Change this value if the ECLIPSE_PREPARE_DIR is not the default one 
 ECLIPSE_PREPARE_DIR="$HOME/eclipse_prepare"
